@@ -37,7 +37,7 @@ body::before{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;bac
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;padding:1.4rem 3.5rem;background:rgba(35,25,66,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);z-index:200}
 .nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:700;font-style:italic;background:linear-gradient(130deg,var(--light),var(--soft));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:.02em}
-.nav-links{display:flex;gap:2.4rem}
+.nav-links{display:flex;gap:1.8rem;flex-wrap:wrap;justify-content:flex-end}
 .nav-links a{font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:var(--soft);text-decoration:none;transition:color .2s}
 .nav-links a:hover{color:var(--light)}
 
@@ -214,6 +214,7 @@ footer{text-align:center;padding:2rem 1rem;border-top:1px solid rgba(159,134,192
     <a href="#skills">Skills</a>
     <a href="#published">Published</a>
     <a href="#projects">Projects</a>
+    <a href="#workshops">Workshops</a>
     <a href="#certs">Certs</a>
     <a href="#contact">Contact</a>
   </div>
@@ -237,7 +238,7 @@ footer{text-align:center;padding:2rem 1rem;border-top:1px solid rgba(159,134,192
     <div class="hero-cta">
       <a href="#experience" class="btn-fill">View My Work</a>
       <a href="#contact" class="btn-ghost">Get In Touch</a>
-      <a href="Javeria-cv-v2.pdf" download class="btn-download">
+      <a href="Javeria-cv-v3.pdf" download class="btn-download">
         <svg viewBox="0 0 24 24" width="15" height="15" stroke="currentColor" stroke-width="2" fill="none" style="flex-shrink:0"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Download CV
       </a>
@@ -260,7 +261,7 @@ footer{text-align:center;padding:2rem 1rem;border-top:1px solid rgba(159,134,192
     <div class="about-text">
       <p>I'm a <strong>Supply Chain Management student at Bahria University Islamabad</strong> (Class of 2028), driven by the conviction that how goods move through the world shapes the world itself.</p>
       <p>At <strong>WWF-Pakistan's SMEP Project</strong>, I worked directly on sustainability assessments within the leather supply chain &mdash; gaining hands-on exposure to environmental compliance and responsible sourcing in practice, not just in textbooks.</p>
-      <p>Currently interning with <strong>Pakistan Career Fair</strong> and participating in the <strong>Aspire Leadership Program</strong>, I'm building the skills to operate at the intersection of operations, impact, and innovation.</p>
+      <p>Currently enrolled in the <strong>McKinsey Forward Program</strong> and having recently completed the <strong>Aspire Leadership Program</strong>, I'm continuously building the problem-solving and strategic skills to operate at the intersection of operations, impact, and innovation.</p>
 
       <div class="flow-wrap">
         <div class="flow-label">The supply chain &mdash; click each node</div>
@@ -318,7 +319,7 @@ footer{text-align:center;padding:2rem 1rem;border-top:1px solid rgba(159,134,192
       <div class="pillar">
         <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         <div class="pillar-name">Leadership</div>
-        <div class="pillar-desc">Aspire Leadership Program participant &mdash; leading with purpose and adaptability.</div>
+        <div class="pillar-desc">McKinsey Forward &amp; Aspire Leadership Program participant &mdash; leading with adaptability.</div>
       </div>
       <div class="pillar">
         <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
@@ -343,10 +344,20 @@ footer{text-align:center;padding:2rem 1rem;border-top:1px solid rgba(159,134,192
     <div class="titem" data-anim>
       <div class="tdot"></div>
       <div class="tcard">
+        <div class="torg">McKinsey &amp; Company</div>
+        <div class="trole">McKinsey Forward Program</div>
+        <div class="tdate">Ongoing</div>
+        <div class="tdesc">Selected for a global program focused on business, problem-solving, and leadership. Actively building skills in structured thinking, adaptability, and decision-making through industry-relevant, case-based learning approaches.</div>
+      </div>
+    </div>
+
+    <div class="titem" data-anim>
+      <div class="tdot"></div>
+      <div class="tcard">
         <div class="torg">Pakistan Career Fair / Skill4U</div>
         <div class="trole">Supply Chain Intern &mdash; Remote</div>
-        <div class="tdate">Feb 2026 &mdash; Present</div>
-        <div class="tdesc">Contributing to supply chain and operational initiatives through the Skill4U program while developing professional competencies in a structured environment under the Pakistan Career Fair umbrella.</div>
+        <div class="tdate">Feb 2026 &mdash; Apr 2026</div>
+        <div class="tdesc">Contributed to supply chain and operational initiatives through the Skill4U program. Selected as <strong>Intern of the Week</strong> for outstanding performance and achieved <strong>2nd position overall</strong> among program participants by demonstrating strong communication and collaborative problem-solving skills.</div>
       </div>
     </div>
 
@@ -356,7 +367,7 @@ footer{text-align:center;padding:2rem 1rem;border-top:1px solid rgba(159,134,192
         <div class="torg">WWF-Pakistan &mdash; SMEP Project</div>
         <div class="trole">Supply Chain Sustainability Intern</div>
         <div class="tdate">Jan 2026 &mdash; Feb 2026</div>
-        <div class="tdesc">Supported sustainability assessments across the leather supply chain under the SMEP project framework. Gained direct exposure to responsible sourcing standards, environmental compliance procedures, and how international sustainability benchmarks translate to operational practice within a conservation-focused organisation.</div>
+        <div class="tdesc">Supported sustainability assessments across the leather supply chain. Participated in an industry event on leather traceability and sustainability at <strong>Expo Centre Lahore</strong>, gaining direct exposure to responsible sourcing standards, environmental compliance procedures, and how global benchmarks translate to operational practice.</div>
         <a href="https://www.wwfpak.org/knowledge_hub_/wwf_blog/#:~:text=The%20Ethics%20Behind%20Leather,Freshwater%20Programme%2C%20WWF%2DPakistan" target="_blank" class="pub-badge">
           <svg viewBox="0 0 24 24" width="13" height="13" stroke="currentColor" stroke-width="2" fill="none"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
           Published &mdash; WWF-Pakistan Blog
@@ -369,8 +380,8 @@ footer{text-align:center;padding:2rem 1rem;border-top:1px solid rgba(159,134,192
       <div class="tcard">
         <div class="torg">Aspire Leadership Program</div>
         <div class="trole">Program Participant</div>
-        <div class="tdate">2025 &mdash; Ongoing</div>
-        <div class="tdesc">Selected for a competitive leadership development cohort, building strategic thinking, communication, and professional resilience alongside high-performing peers from across Pakistan.</div>
+        <div class="tdate">2026 &mdash; Completed</div>
+        <div class="tdesc">Completed 40+ hours of leadership training with global participants. Developed critical thinking, communication, and professional resilience alongside high-performing peers through collaborative learning focused on social impact and problem-solving.</div>
       </div>
     </div>
 
@@ -518,6 +529,34 @@ footer{text-align:center;padding:2rem 1rem;border-top:1px solid rgba(159,134,192
       <div class="porg">Marketing Strategy</div>
       <div class="pname">Woodeek &mdash; Brand &amp; Market Positioning</div>
       <p class="pdesc">Developed a comprehensive branding concept and market positioning strategy proposal. Synthesised market research, target audience analysis, and competitive benchmarking into a cohesive strategic framework.</p>
+    </div>
+
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- WORKSHOPS & CONFERENCES -->
+<div class="wrap" id="workshops">
+  <div class="sec-head">
+    <span class="sec-label">Workshops</span>
+    <h2 class="sec-title">Conferences &amp; Events</h2>
+    <div class="sec-rule"></div>
+  </div>
+  <div class="proj-grid">
+
+    <div class="pcard" data-anim>
+      <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      <div class="porg">Islamabad</div>
+      <div class="pname">Social Innovation Academy (SIA) Summit 2.0</div>
+      <p class="pdesc">Attended an international summit centered on women-led social enterprises and innovation ecosystems. Gained comprehensive insights into entrepreneurship, digital empowerment, and scaling social impact initiatives.</p>
+    </div>
+
+    <div class="pcard" data-anim>
+      <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <div class="porg">IIUI Islamabad</div>
+      <div class="pname">Energy &amp; Climate Modeling Workshop (LEAP)</div>
+      <p class="pdesc">Participated in a technical workshop on the Low Emissions Analysis Platform (LEAP) for climate policy modeling. Explored energy planning methodologies, sustainability strategies, and data-driven environmental decision-making.</p>
     </div>
 
   </div>
@@ -677,3 +716,6 @@ track.addEventListener('mouseleave',()=>down=false);
 track.addEventListener('mouseup',()=>down=false);
 track.addEventListener('mousemove',e=>{if(!down)return;e.preventDefault();track.scrollLeft=sl-(e.pageX-track.offsetLeft-sx)*1.2});
 </script>
+
+</body>
+</html>
